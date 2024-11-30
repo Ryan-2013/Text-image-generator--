@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  canvas {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .controls {
+    margin: 20px auto;
+    text-align: left;
+    max-width: 100%;
+  }
+  .control-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  label {
+    display: inline-block;
+    font-weight: bold;
+    width: 30%;
+  }
+  input, textarea {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  textarea {
+    resize: none;
+  }
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 600px) {
+    .control-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    label {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+  }
